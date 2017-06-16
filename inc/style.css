@@ -1,0 +1,207 @@
+@font-face {
+	font-family: OSans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: OLight;
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: OBold;
+	src: url(../fonts/OpenSans-Bold.ttf);
+}
+body { background-color: #ecf0f1;font-family: OSans; }
+.atas {
+	position: absolute;
+	top: 0px;left: 0px;right: 0px;
+	line-height: 54px;
+	background-color: #2ecc71;
+	color: #fff;
+}
+.judul {
+	float: left;
+	font-family: OBold;
+	font-size: 30px;
+	margin-left: 4%;
+}
+.judul > span { font-size: 19px; }
+.boxLogin {
+	background-color: #fff;
+	border:1px solid #aaa;
+	position: absolute;
+	top: 90px;right: 5%;
+	width: 35%;
+	height: 465px;
+	text-align: center;
+}
+.boxLogin > h2 {
+	font-family: OBold;
+	font-size: 28px;
+}
+.logBox {
+	width: 85%;
+	height: 50px;
+	padding: 1px 10px 1px 10px;
+	margin:12px 0px 15px 0px;
+	border:none;
+	border-bottom: 2px solid #2ecc71;
+	background: none;
+	z-index: 2;
+	position: absolute;
+	top: 110px;left: 25px;
+	font-size: 22px;
+	transition: 0.65s;
+}
+#isiID,#isiNama {
+	position: absolute;
+	top: 133px;left: 33px;
+	font-size: 22px;
+	z-index: 1;
+	transition: 0.65s;
+}
+#isiNama { top: 223px; }
+#nama {
+	top: 200px;
+}
+.tombol {
+	margin-top: 169px;
+}
+.tombol > button,#tblBuat {
+	width: 225px;
+	height: 46px;
+	margin:10px 0px 13px 0px;
+	font-size: 23px;
+	border-radius: 6px;
+	border:none;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.7s;
+}
+#gabung,#tblBuat { background-color: #2ecc71; }
+#tblBuat { width: 300px;height: 58px;font-size: 26px; }
+#buat { color: #333;border:1px solid #aaa;position: relative;top: -20px; }
+#gabung:hover,#tblBuat:hover { background-color: #27ae60; }
+.tombol > div > span {
+	position: relative;
+	top: -20px;
+	background: #fff;
+	padding: 1px 15px 1px 15px;
+}
+.divBuat {
+	position: absolute;
+	display: none;
+	top: 97px;left: 16.5%;
+	padding: 4px 15px 15px 30px;
+	width: 66%;
+	background-color: #fff;
+	border:1px solid #aaa;
+}
+.divBuat > h2 {
+	font-family: OBold;
+	font-size: 38px;
+	margin: 0;
+	margin:9px 0px 20px 0px;
+	color: #333;
+}
+.buatBox {
+	width: 505px;
+	height: 58px;
+	padding: 1px 15px 1px 15px;
+	margin:10px 0px 14px 0px;
+	font-size: 22px;
+	border-radius: 6px;
+	border:1px solid #aaa;
+	transition: 0.56s;
+}
+.container {
+	width: 80%;
+	position: absolute;
+	top: 70px;left: 10%;bottom: 0px;
+	margin-bottom: 400px;
+}
+#ketik {
+	text-align: center;
+	position: fixed;
+	left: 2.5%;bottom: 1%;
+	width: 95%;
+	height: 15%;
+}
+#pesan {
+	width: 340px;
+	height: 69px;
+}
+#percakapan {
+	position: absolute;
+	top: 0px;bottom: 16.5%;left: 0px;right: 0px;
+}
+#kirim {
+	width: 110px;
+	height: 48px;
+	background-color: #3498db;
+	cursor: pointer;
+	font-size: 21px;
+	color: #fff;
+	border:none;
+	border-radius: 5px;
+	transition: 0.6s;
+}
+#kirim:hover { background-color: #2980b9; }
+.cakap {
+	width: 55%;
+	padding:15px 12px 18px 12px;
+	background-color: #fff;
+	border:1px solid #aaa;
+	border-radius: 8px;
+	margin:10px 0px 14px 0px;
+	margin-left: 1%;
+}
+#chatSaya {
+	margin-left: 42%;
+	background-color: #2ecc71;
+	color: #fff;
+	border:none;
+	text-align: right;
+}
+.namaCakap {
+	font-size: 17px;
+	font-family: OBold;
+}
+#chatDia > .namaCakap { color: #333; }
+.pesannya {
+	line-height: 32px;
+	font-size: 22px;
+	font-family: OLight;
+	padding:3px 15px 6px 15px;
+}
+#keluar {
+	width: 120px;
+	height: 45px;
+	background-color: #e74c3c;
+	color: #fff;
+	border-radius: 5px;
+	border:none;
+	float: right;
+	margin-right: 4%;
+}
+#hapusPesanku { cursor: pointer; }
+@media (max-width: 480px) {
+	.boxLogin {
+		width: 90%;
+	}
+	#pesan {
+		width: 184px;
+		height: 50px;
+	}
+	#kirim {
+		width: 95px;
+		height: 43px;
+	}
+	.cakap {
+		width: 65%;
+		margin-left: 0.2%;
+	}
+	#chatSaya {
+		margin-left: 34%;
+	}
+	.judul { font-size: 24px; }
+}
